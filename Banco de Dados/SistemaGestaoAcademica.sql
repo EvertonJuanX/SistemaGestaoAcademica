@@ -115,6 +115,7 @@ CREATE TABLE `endereco` (
   `cidade` varchar(45) NOT NULL,
   `estado` varchar(30) NOT NULL,
   `cep` varchar(15) NOT NULL,
+  `complemento` varchar(45) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `idEndereco_UNIQUE` (`id`),
   UNIQUE KEY `numero_UNIQUE` (`numero`)
@@ -298,4 +299,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-07-18 22:15:28
+-- Dump completed on 2024-07-25  9:50:56
