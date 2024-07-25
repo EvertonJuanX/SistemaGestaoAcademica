@@ -58,10 +58,7 @@ CREATE TABLE `banco` (
   `operacao` varchar(45) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `idBanco_UNIQUE` (`id`),
-  UNIQUE KEY `nome_UNIQUE` (`nome`),
-  UNIQUE KEY `numConta_UNIQUE` (`numConta`),
-  UNIQUE KEY `agencia_UNIQUE` (`agencia`),
-  UNIQUE KEY `operacao_UNIQUE` (`operacao`)
+  UNIQUE KEY `numConta_UNIQUE` (`numConta`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -299,4 +296,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-07-25  9:50:56
+-- Dump completed on 2024-07-25 10:11:54
