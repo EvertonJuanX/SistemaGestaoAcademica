@@ -12,7 +12,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-
 @Table(name = "Servidor")
 @Entity(name = "servidores")
 @Getter
@@ -22,7 +21,7 @@ import lombok.Setter;
 @EqualsAndHashCode(of = "id")
 
 public class Servidor {
-	
+
 	public Servidor(DadosCadastroServidor dados) {
 		this.ativo = true;
 		this.nome = dados.nome();
@@ -32,21 +31,22 @@ public class Servidor {
 		this.idade = dados.idade();
 		this.email = dados.email();
 		this.cargo = dados.cargo();
-		
+
 	}
-	@Id 
+
+	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	
-	private String nome; 
-	private String siape; 
+
+	private String nome;
+	private String siape;
 	private String CPF;
 	private String RG;
 	private int idade;
 	private String email;
 	private Boolean ativo;
 	private String cargo;
-	
+
 	public void atualizarInformacoes(@Valid DadosAtualizarServidor dados) {
 		if (dados.nome() != null) {
 			this.nome = dados.nome();
@@ -63,21 +63,21 @@ public class Servidor {
 		if (dados.email() != null) {
 			this.email = dados.email();
 		}
-		
+
 		if (dados.cargo() != null) {
 			this.cargo = dados.cargo();
 		}
-		
+
 	}
 
 	public void inativar() {
 		this.ativo = false;
-		
+
 	}
 
 	public void reativar() {
 		this.ativo = true;
-		
+
 	}
 
 }
