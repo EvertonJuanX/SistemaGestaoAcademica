@@ -1,0 +1,9 @@
+package br.ifpe.edu.akadmik.gestao.Projeto.endereco;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import br.ifpe.edu.akadmik.gestao.Projeto.usuario.Usuario;
+
+public interface EnderecoRepository extends JpaRepository<Usuario, Long>{
+
+}

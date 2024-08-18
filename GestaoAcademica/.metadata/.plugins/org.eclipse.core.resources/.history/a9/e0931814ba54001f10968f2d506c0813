@@ -1,0 +1,24 @@
+package br.ifpe.edu.akadmik.gestao.Projeto.endereco;
+
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+public record DadosAtualizarEndereco(
+		
+		@Long id;
+		
+		pString estado;
+		pString cidade;
+		pString cep;
+		pString bairro;
+		pString rua;
+		pString numero;
+		pString complemento;
+		
+		
+		
+		
+		) {
+
+}

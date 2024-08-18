@@ -1,0 +1,18 @@
+package br.ifpe.edu.akadmik.gestao.Projeto.endereco;
+
+import br.ifpe.edu.akadmik.gestao.Projeto.usuario.Usuario;
+
+public record DadosDetalhamentoEndereco(
+
+		Long id,
+
+		String estado, String cidade, String cep, String bairro, String rua, String numero, String complemento
+
+) {
+	public DadosDetalhamentoEndereco(Endereco endereco) {
+		this(endereco.getId(), endereco.getNome(), endereco.getCpf(), endereco.getRg(), usuario.getDataNascimento(),
+				usuario.getTelefone(), usuario.getEmail(), usuario.getSexo(), usuario.endereco());
+
+	}
+
+}

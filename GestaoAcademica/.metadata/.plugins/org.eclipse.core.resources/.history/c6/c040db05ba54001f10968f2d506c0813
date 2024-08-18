@@ -1,0 +1,12 @@
+package br.ifpe.edu.akadmik.gestao.Projeto.endereco;
+
+public record DadosAtualizarEndereco(
+		
+		
+		
+		
+		
+		
+		) {
+
+}

@@ -1,0 +1,16 @@
+package br.ifpe.edu.akadmik.gestao.Projeto.endereco;
+
+import java.time.LocalDate;
+
+import br.ifpe.edu.akadmik.gestao.Projeto.usuario.Sexo;
+
+public record DadosCadastroEndereco(
+
+		Long id,
+
+		String estado, String cidade, String cep, String bairro, String rua, String numero, String complemento
+
+
+) {
+
+}

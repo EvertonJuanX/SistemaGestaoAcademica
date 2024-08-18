@@ -1,0 +1,18 @@
+package br.ifpe.edu.akadmik.gestao.Projeto.aluno;
+
+import br.ifpe.edu.akadmik.gestao.Projeto.Usuario;
+import lombok.Getter;
+import lombok.Setter;
+	
+
+@Getter
+@Setter
+public class Aluno extends Usuario{
+	
+	private int id;
+
+	private String siape;
+	
+	
+
+}
