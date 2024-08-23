@@ -1,7 +1,0 @@
-package com.ifpe.gestaoalunos.servidor;
-
-public record DadosCadastroServidor(  String siepe,
-	    String cargo,
-	    Long idUsuario) {
-
-}
