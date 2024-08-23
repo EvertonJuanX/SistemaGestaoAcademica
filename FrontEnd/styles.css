@@ -1,0 +1,467 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cores principais */
+:root {
+    --primary-color: #006400;
+    --secondary-color: #004d00;
+    --accent-color: #4CAF50;
+    --light-color: #DCDCDC;
+    --dark-color: #333;
+    --white-color: #ffffff;
+} 
+
+/* Corpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #DCDCDC;
+    color: var(--dark-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Cabeçalho */
+.main-header {
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    color: var(--white-color);
+    padding: 15px 0;
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px; /* Limita a largura máxima para telas grandes */
+    margin: auto;
+}
+
+.main-header .logo {
+    height: 50px;
+}
+
+.main-header nav a {
+    color: var(--white-color);
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.main-header nav a:hover {
+    color: var(--accent-color);
+}
+
+/* Formulários de cadastro */
+.form-container {
+    width: 90%;
+    max-width: 600px; /* Ajustado para acomodar novos campos */
+    margin: 50px auto;
+    padding: 30px; /* Ajustado para mais espaçamento */
+    background-color: var(--white-color);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+    margin-bottom: 30px; /* Ajustado para separar do conteúdo */
+    font-size: 1.8em;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.form-container label {
+    margin-bottom: 10px;
+    display: block;
+    font-weight: bold;
+}
+
+.form-container input,
+.form-container select {
+    width: calc(100% - 22px); /* Ajusta a largura considerando o padding */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--dark-color);
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra interna */
+    font-size: 1em; /* Tamanho de fonte ajustado */
+}
+
+.form-container input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.form-container .btn {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 15px;
+    text-align: center;
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1em; /* Tamanho de fonte ajustado */
+    transition: background-color 0.3s; /* Suaviza a transição da cor */
+}
+
+.form-container .btn:hover {
+    background-color: var(--accent-color);
+}
+
+/* Seções de Informações Pessoais, Endereço e Bancárias */
+.information-group {
+    border-top: 2px solid var(--primary-color);
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.information-group h3 {
+    font-size: 1.5em;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.information-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: normal;
+}
+
+.information-group input,
+.information-group select {
+    margin-bottom: 15px;
+}
+
+/* Ajustes para Campos de Endereço e Informações Bancárias */
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espaçamento entre os campos */
+}
+
+.input-group div {
+    flex: 1;
+    min-width: 200px; /* Garante que os campos se ajustem bem */
+}
+
+/* Estilização para Informações Pessoais */
+.personal-info {
+    border-top: 2px solid var(--primary-color);
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+/* Estilização para Campos de Endereço */
+.address-info {
+    border-top: 2px solid var(--primary-color);
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+/* Estilização para Campos Bancários */
+.bank-info {
+    border-top: 2px solid var(--primary-color);
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+/* Tela Inicial do Usuário */
+.tela-inicial {
+    width: 90%;
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.tela-inicial h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.tela-inicial .btn-container {
+    margin-top: 30px;
+}
+
+.tela-inicial .btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 30px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.tela-inicial .btn:hover {
+    background-color: var(--accent-color);
+}
+
+/* Estilos para a seção de eventos e lista de alunos */
+.events-section {
+    padding: 40px 20px;
+    background-color: #f8f9fa; /* Cor de fundo suave para diferenciar a seção */
+}
+
+.events-section h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #006400;
+    margin-bottom: 30px;
+}
+
+.events-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Alinha os cards no centro da página */
+    gap: 20px;
+}
+
+.event-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    text-align: left; /* Alinha o texto à esquerda no card */
+    width: calc(100% - 40px); /* Ajusta a largura para preencher o espaço disponível */
+    max-width: 300px; /* Define uma largura máxima para os cards */
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.event-card h3 {
+    font-size: 1.5em;
+    color: #004d00;
+    margin-bottom: 10px;
+}
+
+.event-description {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.event-details p {
+    font-size: 0.9em;
+    color: #333;
+    margin: 5px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #006400;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #004d00; /* Tom mais escuro para o hover */
+}
+
+/* Rodapé */
+footer {
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    color: var(--white-color);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto; /* Garante que o rodapé fique no final da página */
+}
+
+footer .container {
+    width: 90%;
+    max-width: 1200px; /* Limita a largura máxima para telas grandes */
+    margin: auto;
+}
+
+footer .footer-columns {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer .footer-column {
+    min-width: 150px;
+} 
+
+/* Seleção de Usuário */
+.user-selection {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.user-selection h1 {
+    font-size: 2em;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.user-selection .options {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    gap: 40px; /* Ajustado para espaçamento entre opções */
+}
+
+.user-selection .options a {
+    text-decoration: none;
+    color: var(--dark-color);
+    text-align: center;
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-selection .options a img {
+    width: 120px; /* Ajuste o tamanho das imagens se necessário */
+    height: 120px;
+    margin-bottom: 30px; /* Aumenta o espaço acima das imagens */
+}
+
+.user-selection .options a span {
+    font-size: 1.2em; /* Ajusta o tamanho da fonte se necessário */
+    font-weight: bold;
+}
+
+.user-selection .options a:hover {
+    transform: scale(1.1);
+}
+
+/* Página de Login */
+.login-page {
+    width: 90%;
+    max-width: 400px; /* Limita a largura máxima para melhor ajuste */
+    margin: 50px auto;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--white-color);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-page h1 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.login-page form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-page label {
+    margin-bottom: 5px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.login-page input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid var(--dark-color);
+    border-radius: 5px;
+}
+
+.login-page button {
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.login-page button:hover {
+    background-color: var(--secondary-color);
+}
+
+.login-page a {
+    margin-top: 10px;
+    display: inline-block;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.login-page a:hover {
+    text-decoration: underline;
+}
+
+/* Perfil */
+.profile {
+    background-color: var(--white-color);
+    padding: 50px 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 800px;
+}
+
+.profile h2 {
+    font-size: 2em;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.profile-details {
+    flex: 1;
+    font-size: 1.1em;
+}
+
+.profile-details p {
+    margin-bottom: 10px;
+}
+
+.profile-actions {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.profile-actions .btn {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 5px;
+    display: inline-block;
+}
+
+.profile-actions .btn:hover {
+    background-color: var(--accent-color);
+}

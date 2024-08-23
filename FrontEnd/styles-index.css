@@ -1,0 +1,128 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cores principais */
+:root {
+    --primary-color: #006400;
+    --secondary-color: #004d00;
+    --accent-color: #4CAF50;
+    --light-color: #DCDCDC;
+    --dark-color: #333;
+    --white-color: #ffffff;
+} 
+
+/* Corpo */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.landing-page {
+    background-image: url('images/teste.png'); /* Substitua pelo caminho correto da imagem */
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    background-position: center; /* Centraliza a imagem no fundo */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+}
+
+/* Cabeçalho */
+.main-header {
+    color: var(--white-color);
+    padding: 15px 0;
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.main-header .logo {
+    height: 50px;
+}
+
+.main-header nav a {
+    color: var(--white-color);
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    text-shadow: 
+        -1px -1px 0 black,   /* Sombra no canto superior esquerdo */
+        1px -1px 0 black,    /* Sombra no canto superior direito */
+        -1px 1px 0 black,    /* Sombra no canto inferior esquerdo */
+        1px 1px 0 black;     /* Sombra no canto inferior direito */
+}
+
+.main-header nav a:hover {
+    color: var(--accent-color);
+}
+
+/* Hero Section */
+.hero {
+    color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh; /* Garante que a seção hero ocupe pelo menos 80% da altura da tela */
+    padding: 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 
+        -1px -1px 0 black,   /* Sombra no canto superior esquerdo */
+        1px -1px 0 black,    /* Sombra no canto superior direito */
+        -1px 1px 0 black,    /* Sombra no canto inferior esquerdo */
+        1px 1px 0 black;     /* Sombra no canto inferior direito */
+}
+
+.hero .btn {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.hero .btn:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Rodapé */
+footer {
+    color: var(--white-color);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto; /* Garante que o rodapé fique no final da página */
+    text-shadow: 
+        -1px -1px 0 black,   /* Sombra no canto superior esquerdo */
+        1px -1px 0 black,    /* Sombra no canto superior direito */
+        -1px 1px 0 black,    /* Sombra no canto inferior esquerdo */
+        1px 1px 0 black;     /* Sombra no canto inferior direito */
+}
+
+footer .container {
+    width: 90%;
+    margin: auto;
+}
+
+footer .footer-columns {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer .footer-column {
+    min-width: 150px;
+} 
