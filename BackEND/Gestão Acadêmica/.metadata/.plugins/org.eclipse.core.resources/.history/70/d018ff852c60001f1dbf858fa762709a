@@ -1,0 +1,13 @@
+package com.ifpe.gestaoalunos.aluno;
+
+public record DadosAtualizarAluno(
+		Long id,
+	    Long idUsuario
+		) 	
+
+{
+	
+	public DadosAtualizarAluno(Aluno aluno) {
+    this(aluno.getId(), aluno.getIdUsuario());
+}
+}

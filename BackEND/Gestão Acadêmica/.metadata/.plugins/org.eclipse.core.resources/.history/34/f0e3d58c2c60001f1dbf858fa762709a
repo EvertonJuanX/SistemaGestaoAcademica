@@ -1,0 +1,13 @@
+package com.ifpe.gestaoalunos.aluno;
+
+public record DadosListagemAluno(
+		Long id,
+	    Long idUsuario
+		) 	
+
+{
+	
+	public DadosListagemAluno(Aluno aluno) {
+    this(aluno.getId(), aluno.getIdUsuario());
+}
+}

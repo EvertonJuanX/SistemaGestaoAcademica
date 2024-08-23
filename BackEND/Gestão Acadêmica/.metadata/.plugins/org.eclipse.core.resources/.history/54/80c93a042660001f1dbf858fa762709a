@@ -1,0 +1,15 @@
+package com.ifpe.gestaoalunos.aluno;
+
+public record DadosCadastroAluno(
+
+		String nome,
+		Via via,
+		String lote,
+		String quantidade,
+		String validade,
+		Laboratorio laboratorio
+		
+		
+		) {
+
+}

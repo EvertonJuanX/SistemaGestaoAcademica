@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Id"/>
+    <fullyQualifiedTypeName name="com.ifpe.gestaoalunos.endereco.EnderecoRepository"/>
+    <fullyQualifiedTypeName name="com.ifpe.gestaoalunos.endereco.Endereco"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="com.ifpe.gestaoalunos.aluno.AlunoRepository"/>
+    <fullyQualifiedTypeName name="com.ifpe.gestaoalunos.usuario.DadosCadastroUsuario"/>
+    <fullyQualifiedTypeName name="com.ifpe.gestaoalunos.servidor.DadosCadastroServidor"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.JoinTable"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.JoinColumn"/>
+    <fullyQualifiedTypeName name="com.ifpe.gestaoalunos.controllers.CursoController"/>
+    <fullyQualifiedTypeName name="com.ifpe.gestaoalunos.usuario.Usuario"/>
+    <fullyQualifiedTypeName name="com.ifpe.gestaoalunos.usuario.DadosListagemUsuario"/>
+    <fullyQualifiedTypeName name="com.ifpe.gestaoalunos.endereco.DadosListagemEndereco"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,6 @@
+spring.datasource.url=jdbc:mysql://localhost/gestao_academica_api
+spring.datasource.username=root
+spring.datasource.password=root123
+spring.jpa.hibernate.ddl-auto=update
+
+server.error.include-stacktrace = never
